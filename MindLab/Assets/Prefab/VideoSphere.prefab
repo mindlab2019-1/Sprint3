@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 79859989152380214}
   - component: {fileID: 79859989152380215}
   - component: {fileID: 79859989152380211}
+  - component: {fileID: 4819930430484202283}
   m_Layer: 0
   m_Name: VideoSphere
   m_TagString: Untagged
@@ -88,7 +89,7 @@ SphereCollider:
   m_GameObject: {fileID: 79859989152380216}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
@@ -100,7 +101,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 79859989152380216}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 228c28d67b617c24280d805f7ef67752, type: 3}
+  m_VideoClip: {fileID: 0}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
@@ -118,11 +119,25 @@ VideoPlayer:
   m_DirectAudioVolumes:
   - 1
   m_Url: 
-  m_EnabledAudioTracks: 01
-  m_DirectAudioMutes: 00
+  m_EnabledAudioTracks: 00
+  m_DirectAudioMutes: 01
   m_ControlledAudioTrackCount: 1
   m_PlayOnAwake: 1
   m_SkipOnDrop: 0
   m_Looping: 1
   m_WaitForFirstFrame: 0
   m_FrameReadyEventEnabled: 0
+--- !u!114 &4819930430484202283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 79859989152380216}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ba72453a47f28a438a9d77efcdeec3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  videoClip4G: {fileID: 32900000, guid: 0a58ffacb9a18b1429837e1819a0e006, type: 3}
+  videoClip5G: {fileID: 32900000, guid: 0fb5e7a98278d464e8fb288ff52c0de3, type: 3}

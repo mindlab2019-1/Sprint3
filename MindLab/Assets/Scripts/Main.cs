@@ -19,9 +19,14 @@ public class Main : MonoBehaviour
         if (Controller.ControllerInputDevice.GetButtonDown(GvrControllerButton.TouchPadButton))
         {
             Vector3 point = Controller.GetComponentInChildren<GvrLaserPointer>().transform.forward.normalized * distance;
-            Debug.Log("Click! Instantiating sphere at "+ point);
+            //Debug.Log("Click! Instantiating sphere at "+ point);
             
-            AnnotationManager.Instance.NewAnnotation(point, "test");
+            AnnotationManager.Instance.NewAnnotation(point, "New Annotation \n\nPress here to enter text...");
+        }
+
+        if (Controller.ControllerInputDevice.GetButtonDown(GvrControllerButton.App))
+        {
+            VideoSwitcher.Instance.SwitchVideo();
         }
     }
 }
